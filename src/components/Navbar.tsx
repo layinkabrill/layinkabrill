@@ -9,6 +9,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+function isActive(href: string, pathname: string) {
+  if (href === "/portfolio") {
+    return pathname === "/portfolio" || pathname.startsWith("/work");
+  }
+  return pathname === href;
+}
+
 export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -52,7 +59,7 @@ export function Navbar() {
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
           {navLinks.map((link) => {
-            const active = link.href === pathname && pathname !== "/";
+            const active = isActive(link.href, pathname);
             return (
               <Link
                 key={link.href}
@@ -71,7 +78,7 @@ export function Navbar() {
 
         <div className="hidden lg:block">
           <Button
-            href="/#contact"
+            href="/contact"
             size="md"
             className="border-0 bg-black text-white shadow-none hover:bg-zinc-900 hover:shadow-none"
           >
@@ -103,7 +110,7 @@ export function Navbar() {
             {siteConfig.tagline}
           </p>
           {navLinks.map((link) => {
-            const active = link.href === pathname && pathname !== "/";
+            const active = isActive(link.href, pathname);
             return (
               <Link
                 key={link.href}
@@ -120,7 +127,7 @@ export function Navbar() {
             );
           })}
           <Button
-            href="/#contact"
+            href="/contact"
             className="mt-3 w-full border-0 bg-black text-white shadow-none hover:bg-zinc-900 hover:shadow-none"
             onClick={() => setOpen(false)}
           >

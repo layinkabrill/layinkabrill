@@ -27,8 +27,6 @@ export const contactInfo = {
   phoneHref: "tel:+2348056243084",
   whatsapp: "https://wa.me/2348056243084",
   linkedin: "",
-  discord: "SmileBrill 🥰",
-  discordHref: "https://discord.com/users/smilebrill",
   twitter: "@SmileBrill01",
   twitterHref: "https://x.com/SmileBrill01",
   calendlyLabel: "Anytime",
@@ -40,18 +38,15 @@ export const socialLinks = {
   whatsapp: contactInfo.whatsapp,
   email: `mailto:${contactInfo.email}`,
   phone: contactInfo.phoneHref,
-  discord: contactInfo.discordHref,
   twitter: contactInfo.twitterHref,
 };
 
 export const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/#services" },
-  { label: "Solutions", href: "/#solutions" },
-  { label: "Portfolio", href: "/portfolio" },
-  { label: "Process", href: "/#process" },
-  { label: "About", href: "/#about" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Work", href: "/portfolio" },
+  { label: "Services", href: "/services" },
+  { label: "Process", href: "/process" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ] as const;
 
 export const heroWorkflow = [

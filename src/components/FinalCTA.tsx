@@ -22,7 +22,7 @@ export function FinalCTA() {
                 whatever niche you&apos;re in.
               </p>
               <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                <Button href="#contact" size="lg">
+                <Button href="/contact" size="lg">
                   Book a Free Automation Consultation
                 </Button>
                 <Button href="/portfolio" variant="secondary" size="lg">

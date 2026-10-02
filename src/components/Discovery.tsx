@@ -22,7 +22,7 @@ export function Discovery() {
               workflow.
             </p>
             <div className="mt-8">
-              <Button href="#contact" size="lg">
+              <Button href="/contact" size="lg">
                 Get a Free Automation Assessment
               </Button>
             </div>

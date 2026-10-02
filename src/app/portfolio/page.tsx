@@ -1,6 +1,5 @@
-import { Footer } from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
 import { PortfolioGallery } from "@/components/PortfolioGallery";
+import { SiteFrame } from "@/components/SiteFrame";
 import { Button } from "@/components/ui/Button";
 import { projects } from "@/data/projects";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
@@ -28,9 +27,7 @@ export default function PortfolioPage() {
   ];
 
   return (
-    <>
-      <Navbar />
-      <main className="pt-16 md:pt-[4.25rem]">
+    <SiteFrame>
         <section className="relative">
           <div className="mx-auto w-full max-w-6xl px-5 pt-14 pb-10 md:px-8 md:pt-20 md:pb-14">
             <Link
@@ -51,8 +48,9 @@ export default function PortfolioPage() {
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-zinc-600 md:text-lg">
               Mobile apps for property, food, retail, delivery, and shipping,
-              websites for real businesses, and automations built in n8n,
-              Make.com, and Zapier. Click any screenshot to see it full size.
+              websites for jewelry, fashion, beauty, watches, and professional
+              services, and automations built in n8n, Make.com, and Zapier.
+              Open a case study for the full write-up, or click a screenshot to see it full size.
             </p>
 
             <dl className="mt-10 grid max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4">
@@ -87,7 +85,7 @@ export default function PortfolioPage() {
                   follow up with next steps.
                 </p>
               </div>
-              <Button href="/#contact" size="lg" className="group shrink-0">
+              <Button href="/contact" size="lg" className="group shrink-0">
                 Book a Free Consultation
                 <ArrowUpRight
                   className="h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -97,8 +95,6 @@ export default function PortfolioPage() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+    </SiteFrame>
   );
 }

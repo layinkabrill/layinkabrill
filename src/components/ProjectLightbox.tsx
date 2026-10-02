@@ -11,7 +11,6 @@ import {
   ZoomIn,
   ZoomOut,
 } from "lucide-react";
-import Image from "next/image";
 import {
   useCallback,
   useEffect,
@@ -183,8 +182,8 @@ export function ProjectLightbox({
               >
                 <motion.div
                   key={project.id}
-                  initial={{ opacity: 0, scale: 0.97 }}
-                  animate={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
                   transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
                   className={cn(
                     "overflow-hidden rounded-xl bg-white shadow-[0_30px_80px_-20px_rgba(0,0,0,0.7)] ring-1 ring-white/10",
@@ -196,14 +195,23 @@ export function ProjectLightbox({
                       : undefined
                   }
                 >
-                  <Image
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src={project.image}
                     alt={project.imageAlt}
-                    width={0}
-                    height={0}
-                    unoptimized
-                    onLoad={(e) => setNaturalWidth(e.currentTarget.naturalWidth)}
+                    draggable={false}
                     onClick={toggleZoom}
+                    ref={(node) => {
+                      if (!node) return;
+                      const apply = () => {
+                        const dpr = window.devicePixelRatio || 1;
+                        const width = node.naturalWidth / dpr;
+                        setNaturalWidth(width);
+                        node.style.maxWidth = `min(100%, ${width}px)`;
+                      };
+                      if (node.complete && node.naturalWidth) apply();
+                      else node.onload = apply;
+                    }}
                     className={cn(
                       "block h-auto max-w-full",
                       zoomed

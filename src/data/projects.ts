@@ -570,6 +570,318 @@ const projectList: Omit<Project, "number">[] = [
     outcome:
       "A customer can jump from a featured combo to the order tab without scrolling back to the top.",
   },
+  {
+    id: "jewellery-shop-website",
+    title: "Jewellery Shop Website",
+    category: "Website",
+    platform: "Website Design & Development",
+    image: "/projects/jewellery-shop-website.jpg",
+    imageAlt:
+      "Jewellery Shop fine jewels website with Timeless Brilliance hero, category cards for rings, necklaces, earrings, bracelets and bridal, a loved-most product grid, and client stories",
+    imageFit: "cover",
+    summary:
+      "A warm fine-jewelry storefront for browsing signature pieces, booking a consultation, and reading the craft behind each design.",
+    problem:
+      "Jewelry shoppers need to see the piece, the price, and a reason to trust the maker before they book a private consultation.",
+    solution:
+      "A gold-toned page with a Timeless Brilliance hero, category cards for rings, necklaces, earrings, bracelets, and bridal, editorial collections, a Loved Most grid with prices and ratings, a craftsmanship story, shipping and returns promises, client quotes, and a journal.",
+    workflow: [
+      "Hero + Consultation",
+      "Shop by Category",
+      "Loved Most",
+      "Craft & Promises",
+      "Client Stories",
+    ],
+    tools: websiteTools,
+    outcome:
+      "A visitor can move from a signature piece to a category, a product, or a private consultation without leaving the page.",
+  },
+  {
+    id: "beauty-shop-website",
+    title: "Beauty Shop Cosmetics Website",
+    category: "Website",
+    platform: "Website Design & Development",
+    image: "/projects/beauty-shop-website.jpg",
+    imageAlt:
+      "Beauty Shop cosmetics website with a beauty hub hero, category circles, hair and skincare deals, brand story, tips, and newsletter",
+    imageFit: "cover",
+    summary:
+      "A cosmetics shop for browsing skin, makeup, hair, fragrance, nails, and body care, with deals called out above the fold.",
+    problem:
+      "A large beauty catalog is hard to scan. Shoppers need categories, current deals, and a short path to the products.",
+    solution:
+      "A green storefront with a Beauty & Cosmetics Hub hero, trust notes for quality, payment, delivery, and returns, round category icons, hair-care and skincare offer cards, a founder story with catalog stats, ingredient and cruelty-free badges, beauty tips, and an email signup.",
+    workflow: [
+      "Hero + Shop Now",
+      "Shop by Category",
+      "Hair & Skin Deals",
+      "Brand Story",
+      "Tips & Newsletter",
+    ],
+    tools: websiteTools,
+    outcome:
+      "A shopper can jump into a category or a live deal, then subscribe for the next drop.",
+  },
+  {
+    id: "deart-jewelry-catalog",
+    title: "DE'ART Jewelry Catalog",
+    category: "Website",
+    platform: "Website Design & Development",
+    image: "/projects/deart-jewelry-catalog.jpg",
+    imageAlt:
+      "DE'ART 2025 jewelry catalog with a sapphire portrait, heart pendant, diamond ring, and advantage cards on a dark navy layout",
+    imageFit: "cover",
+    summary:
+      "A dark 2025 product catalog for DE'ART, built to present signature stones, a ring story, and a video look at the collection.",
+    problem:
+      "A jewelry catalog has to feel rare. A plain product list does not show the stone, the setting, or why the piece is worth a closer look.",
+    solution:
+      "A navy presentation with the DE'ART name, a sapphire portrait, a heart pendant on velvet, a diamond ring section with material and sizing notes, a play button for the 2025 collection film, and four advantage cards for exclusive pieces, quality, range, and packaging.",
+    workflow: [
+      "Catalog Cover",
+      "Designer Jewelry",
+      "Signature Ring",
+      "Collection Film",
+      "Advantages",
+    ],
+    tools: websiteTools,
+    outcome:
+      "A reader can move from the cover story to a single ring, its sizes, and a filmed look at the 2025 collection.",
+  },
+  {
+    id: "street-fashion-website",
+    title: "Street Fashion Store",
+    category: "Website",
+    platform: "Website Design & Development",
+    image: "/projects/street-fashion-website.jpg",
+    imageAlt:
+      "Street Fashion store with a summer collection hero, cart, bestsellers, a shoes sale, and a latest-products grid",
+    imageFit: "cover",
+    summary:
+      "A streetwear shop with a summer collection hero, a live cart, bestsellers, and a latest-products row.",
+    problem:
+      "Streetwear buyers skim fast. The sale, the cart total, and the newest drops need to be visible at once.",
+    solution:
+      "A concrete-textured layout with apparel, shoes, accessories, brands, and outlet tabs, a Summer Collection hero, a header cart with checkout, a shoes sale tile, a bestsellers spotlight, new-arrival promos, and a latest-products grid with prices and quick view.",
+    workflow: [
+      "Summer Hero",
+      "Cart & Checkout",
+      "Bestsellers",
+      "Sale Tiles",
+      "Latest Products",
+    ],
+    tools: websiteTools,
+    outcome:
+      "A shopper can see the cart total, open a bestseller, and scan the latest prices from the same screen.",
+  },
+  {
+    id: "lunora-fashion-website",
+    title: "Lunora Fashion Website",
+    category: "Website",
+    platform: "Website Design & Development",
+    image: "/projects/lunora-fashion-website.jpg",
+    imageAlt:
+      "Lunora fashion website with an everyday-style hero, category icons, collection tiles, bestseller products, and a style-list signup",
+    imageFit: "cover",
+    summary:
+      "A fashion store for women, men, dresses, shoes, and bags, with a seasonal sale and a bestseller grid.",
+    problem:
+      "An everyday fashion shop needs a clear way in: shop the look, filter by category, or catch the current sale.",
+    solution:
+      "A light editorial page with an Elevate Your Everyday Style hero, category icons from women and men through sale, collection tiles for a spring sale and new arrivals, a most-loved product row with prices and ratings, shipping and returns notes, and a style-list signup.",
+    workflow: [
+      "Style Hero",
+      "Category Icons",
+      "Seasonal Sale",
+      "Loved Picks",
+      "Style List",
+    ],
+    tools: websiteTools,
+    outcome:
+      "A visitor can enter a category, open the sale, or join the list for the next drop.",
+  },
+  {
+    id: "urbanstyle-website",
+    title: "UrbanStyle Clothing Store",
+    category: "Website",
+    platform: "Website Design & Development",
+    image: "/projects/urbanstyle-website.jpg",
+    imageAlt:
+      "UrbanStyle clothing store with a summer arrivals banner, category tiles, filters for price color and size, and an add-to-cart product grid",
+    imageFit: "cover",
+    summary:
+      "A clothing shop with summer arrivals, a sale tile, and filters for price, color, size, and brand.",
+    problem:
+      "Apparel catalogs get noisy. Shoppers need filters and an add-to-cart button on every product, not after a second page.",
+    solution:
+      "An UrbanStyle store with search, a summer arrivals banner, tiles for new releases, bestsellers, the men's collection, and sale items, then a trending grid beside filters for category, a $20–$150 price range, color, size, and brand. Each card has a rating and Add to Cart.",
+    workflow: [
+      "Summer Banner",
+      "Collection Tiles",
+      "Filter Sidebar",
+      "Trending Grid",
+      "Add to Cart",
+    ],
+    tools: websiteTools,
+    outcome:
+      "A shopper can narrow by size or price and add a piece to the cart from the grid.",
+  },
+  {
+    id: "modeza-fashion-website",
+    title: "Modeza Fashion Website",
+    category: "Website",
+    platform: "Website Design & Development",
+    image: "/projects/modeza-fashion-website.jpg",
+    imageAlt:
+      "Modeza fashion website with a Timeless Elegance hero, shipping promises, dress and outerwear categories, and a summer sale banner",
+    imageFit: "cover",
+    summary:
+      "A Modeza lookbook for the 2026 collection, with category browsing and a summer sale up to 50% off.",
+    problem:
+      "A new collection needs one calm page: the campaign image, the categories, and the sale, without a crowded menu.",
+    solution:
+      "A cream layout with a Timeless Elegance hero, customer and rating notes, free shipping, returns, payment, and support promises, a shop-by-category row for dresses, tops, outerwear, and bottoms, and a summer sale panel with a shop button.",
+    workflow: [
+      "Collection Hero",
+      "Shopping Promises",
+      "Shop by Category",
+      "Summer Sale",
+      "Explore Collection",
+    ],
+    tools: websiteTools,
+    outcome:
+      "A visitor can open the new collection, a category, or the summer sale from the first screen.",
+  },
+  {
+    id: "timeless-by-nature-website",
+    title: "Timeless By Nature Fashion Website",
+    category: "Website",
+    platform: "Website Design & Development",
+    image: "/projects/timeless-by-nature-website.jpg",
+    imageAlt:
+      "Dark fashion website with a Timeless By Nature hero, men women tops and accessories categories, new arrivals, and best sellers",
+    imageFit: "cover",
+    summary:
+      "A dark fashion store for premium essentials, with men, women, tops, and accessories leading into new arrivals and bestsellers.",
+    problem:
+      "A premium wardrobe site has to feel quiet and still make prices, categories, and new arrivals easy to scan.",
+    solution:
+      "A black and sand layout with a Timeless By Nature hero, notes on fabrics, design, and shipping, category portraits, a new-arrivals row with prices, a summer collection panel, bestsellers, journal stories, and an email signup.",
+    workflow: [
+      "Collection Hero",
+      "Shop by Category",
+      "New Arrivals",
+      "Bestsellers",
+      "Journal & Signup",
+    ],
+    tools: websiteTools,
+    outcome:
+      "A shopper can move from the campaign into a category, a priced arrival, or a care story.",
+  },
+  {
+    id: "vectra-watch-marketplace",
+    title: "Vectra Watch Marketplace",
+    category: "Website",
+    platform: "Website Design & Development",
+    image: "/projects/vectra-watch-marketplace.jpg",
+    imageAlt:
+      "Vectra luxury watch marketplace with latest listings, brand categories, recommended watches, and live auctions",
+    imageFit: "cover",
+    summary:
+      "A luxury watch marketplace for browsing listings by brand and joining live auctions.",
+    problem:
+      "Watch buyers compare references across brands. A marketplace has to show the listing, the price, and whether a lot is in auction.",
+    solution:
+      "A dark Vectra home with latest listings and a Shop Now path, a brand row, recommended watches with prices and ratings, and a Vectra Auctions row marked Ending Soon, with Bid and Watch actions on each lot.",
+    workflow: [
+      "Latest Listings",
+      "Shop by Brand",
+      "Recommended",
+      "Live Auctions",
+      "Bid or Watch",
+    ],
+    tools: websiteTools,
+    outcome:
+      "A buyer can open a listing, compare a recommendation, or bid on a lot that is ending soon.",
+  },
+  {
+    id: "scheduled-social-content",
+    title: "Scheduled Social Content Workflow",
+    category: "Automation",
+    platform: "n8n",
+    image: "/projects/scheduled-social-content.jpg",
+    imageAlt:
+      "n8n workflow: schedule trigger, Google Sheet row, AI agent, image prompt, generate image, then post to Facebook, LinkedIn, and Instagram",
+    imageFit: "contain",
+    summary:
+      "A scheduled flow that takes the next sheet row, writes the post, makes the image, and publishes it to Facebook, LinkedIn, and Instagram.",
+    problem:
+      "Each campaign meant copying a row, creating a visual, and uploading the same post to three networks by hand.",
+    solution:
+      "A schedule trigger reads the next sheet row. An AI agent writes the post and an image prompt agent prepares the picture. The image is converted, posted to Facebook, LinkedIn, and Instagram, emailed, and the sheet row is marked done.",
+    workflow: [
+      "Schedule",
+      "Sheet Row",
+      "AI Copy + Image",
+      "Social Posts",
+      "Update Sheet",
+    ],
+    tools: ["n8n", "Google Sheets", "OpenAI", "Facebook", "LinkedIn", "Instagram", "Gmail"],
+    outcome:
+      "One sheet row becomes a caption, an image, and posts on three networks without a manual upload.",
+  },
+  {
+    id: "zammad-ticket-workflow",
+    title: "Zammad Ticket Attachment Workflow",
+    category: "Automation",
+    platform: "n8n",
+    image: "/projects/zammad-ticket-workflow.jpg",
+    imageAlt:
+      "n8n workflow that logs in, uploads a file, comments on a Zammad ticket, closes it, and a second path that filters ticket attachments",
+    imageFit: "contain",
+    summary:
+      "A support flow that uploads a file, comments on the Zammad ticket, and closes it when the upload succeeds.",
+    problem:
+      "Attachments and ticket comments were handled one by one, and a failed upload still needed a person to notice it.",
+    solution:
+      "The flow logs in, uploads the file, and if the upload is ok it adds a Zammad comment and closes the ticket. A second path gets tickets, maps them, fetches articles, filters attachments, and corrects the file before commenting.",
+    workflow: [
+      "Login",
+      "Upload File",
+      "Zammad Comment",
+      "Close Ticket",
+      "Filter Attachments",
+    ],
+    tools: ["n8n", "Zammad", "HTTP Request"],
+    outcome:
+      "A successful upload leaves a comment and closes the ticket. Failed uploads stay on a separate path.",
+  },
+  {
+    id: "ai-agent-architecture",
+    title: "AI Agent Architecture",
+    category: "Automation",
+    platform: "AI Agent Design",
+    image: "/projects/ai-agent-architecture.jpg",
+    imageAlt:
+      "AI agent architecture diagram from user goal through channels, planning, memory, models, tools, data, safety checks, and deployment",
+    imageFit: "contain",
+    summary:
+      "An architecture map for an AI agent, from the user goal through channels, planning, memory, models, tools, and deployment.",
+    problem:
+      "An agent is more than a chat box. Without a map of memory, tools, and checks, the system is hard to explain or extend.",
+    solution:
+      "One diagram splits the agent into layers: interface and channels, planning and orchestration, memory, language models, tools and actions, a data layer, observability and safety, and deployment.",
+    workflow: [
+      "User Goal",
+      "Channels & Planning",
+      "Memory & Models",
+      "Tools & Data",
+      "Checks & Deploy",
+    ],
+    tools: ["Chat & API", "Planning", "Memory", "Language Models", "Tools & Actions", "Data Layer"],
+    outcome:
+      "The whole agent can be walked through in one view, from the request to the checks before it goes live.",
+  },
 ];
 
 export const projects: Project[] = projectList.map((project, index) => ({

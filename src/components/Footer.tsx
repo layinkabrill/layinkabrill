@@ -64,7 +64,7 @@ export function Footer() {
               .map((service) => (
               <li key={service.id}>
                 <Link
-                  href="/#services"
+                  href="/services"
                   className="text-sm text-zinc-400 transition hover:text-white"
                 >
                   {service.title}
@@ -100,16 +100,6 @@ export function Footer() {
                 rel="noreferrer"
               >
                 WhatsApp
-              </a>
-            </li>
-            <li>
-              <a
-                href={contactInfo.discordHref}
-                className="hover:text-white"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Discord — {contactInfo.discord}
               </a>
             </li>
             <li>
